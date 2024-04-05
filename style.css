@@ -1,0 +1,319 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav to the right */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    backdrop-filter: blur(5px);
+}
+
+.nav-links {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block; /* Align links in a row */
+    margin-right: 20px; /* Spacing between links */
+}
+
+.nav-links li a {
+    text-decoration: none; /* Removes default underline */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #dddddd; /* Lighter shade on hover */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.post-title:hover {
+    color: #acacac; /* Change color on hover */
+}
+
+.blog-post-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    object-fit: cover;
+    height: 200px; /* Adjust based on your design */
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    background: #292929; /* Sets a black background for the page */
+    font-family: Arial, sans-serif; /* Ensures a consistent font is used*/
+}
+
+.header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-container h1 {
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contact-form button {
+    background-color: #005A9C; /* Adjust to fit your site's theme */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#contact-form button:hover {
+    background-color: #003D73; /* Darker shade for hover effect */
+}
+
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes sure the section takes up the full height of the viewport */
+    overflow: hidden;
+}
+
+.landing-image {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    border: 2px solid #242424; /* White border */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+    background: rgba(255, 255, 255, 0.1); /* Adding a glass effect on hover */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /* Keep other existing hover properties */
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal, .gallery img:hover {
+    background: rgba(255, 255, 255, 0.2); /* Increase opacity for more pronounced effect */
+    backdrop-filter: blur(15px); /* Increase the blur for a stronger effect */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle white border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 250px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #ffffff; /* White icons */
+    margin: 0 10px;
+    font-size: 24px; /* Adjust icon size as needed */
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover, .social-icon:focus {
+    color: #dddddd; /* Lighter shade on hover/focus */
+    transform: scale(1.1); /* Slightly enlarge icons on hover/focus */
+}
+
+.close {
+    position: absolute; 
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.header, footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for the form */
+    backdrop-filter: blur(10px); /* Blur effect for the glassy look */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.contact-container h1, label {
+    color: #fff; /* Light color for text for readability */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #fff; /* Light border */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent input backgrounds */
+    color: #fff; /* Light input text */
+    border-radius: 5px; /* Matches the form's rounded corners */
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Bright color for contrast */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+footer {
+    background-color: #222; /* Slightly lighter than the body for contrast */
+    color: white;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+
